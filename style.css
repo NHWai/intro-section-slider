@@ -18,8 +18,8 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto auto 5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* General Utility Classes */
@@ -178,7 +178,7 @@ body {
 }
 
 .title {
-  font-size: 7rem;
+  font-size: 5rem;
   margin-bottom: 2rem;
   line-height: 0.9;
 }
@@ -196,6 +196,8 @@ body {
 }
 
 footer {
+  margin-top: auto;
+  height: 5rem;
   background-color: midnightblue;
   display: grid;
   place-items: center;
@@ -294,6 +296,23 @@ footer {
 
   .hero_contain {
     flex-direction: column;
+    align-items: center;
     gap: 4rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title,
+  .description {
+    text-align: center;
+  }
+
+  .clients {
+    align-self: stretch;
   }
 }
